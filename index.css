@@ -1,0 +1,92 @@
+/* general styles */
+html, body {
+  height: 100%;
+  width: 100%;
+
+}
+body {
+    font-family: 'Karla', sans-serif !important
+}
+/* padded section */
+.pad-section {
+  padding: 50px 0;
+  height: 100%
+}
+.pad-section img {
+  width: 100%;
+}
+/* vertical-centered text */
+.text-vcenter {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+.text-vcenter h1 {
+  font-size: 4.5em;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+  color: white
+}
+
+.video iframe {
+  max-height: 80%;
+  padding-top: 20%;
+}
+
+.title-tag {
+  background-color: #306d9f;
+  opacity: 0.6
+}
+/* additional sections */
+#home {
+  background: url(https://assets.pcmag.com/media/images/199406-10-lumus-loe-based-glasses.jpg) no-repeat center center fixed;
+  display: table;
+  height: 100%;
+  position: relative;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#demo {
+  background-color: #83878e;
+  color: #ffffff;
+}
+#features {
+  background-color: #ffffff;
+  color: #83878e;
+}
+#features .glyphicon {
+  border: 2px solid #FFFFFF;
+  border-radius: 50%;
+  display: inline-block;
+  font-size: 60px;
+  height: 140px;
+  line-height: 140px;
+  text-align: center;
+  vertical-align: middle;
+  width: 140px;
+}
+#testimonials {
+  background-color: #306d9f;
+  color: #83878e;
+}
+#testimonials .panel {
+  opacity: 0.85;
+}
+#google_map {
+  height: 500px;
+}
+footer {
+  padding: 20px 0;
+}
+footer .glyphicon {
+  color: #333333;
+  font-size: 60px;
+}
+footer .glyphicon:hover {
+  color: #306d9f;
+}
