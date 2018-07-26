@@ -8,6 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="index.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
         <link rel="icon" type="image/png" sizes="32x32" href="  ">
         <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -25,14 +26,14 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#home">Blinders</a>
+            <a class="navbar-brand" href="#home" style="color: #306d9f">Blinders</a>
           </div>
           <div class="collapse navbar-collapse" id="navbar-collapse-main">
             <ul class="nav navbar-nav navbar-right">
               <li><a href="#demo">Demo</a></li>
               <li><a href="#features">Features</a></li>
               <li><a href="#testimonials">Testimonials</a></li>
-              <li><a href="#action">Buy Now</a></li>
+              <li><a href="#action" style="color: #306d9f">Buy Now</a></li>
             </ul>
           </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
@@ -43,11 +44,11 @@
         <div class="text-vcenter">
           <div class="title-tag">
             <h1>Homelessness Blinders&trade;</h1>
-            <h1>Out of sight. Out of mind.</h1>
+            <div class="typewriter"><h1>Out of sight. Out of mind.</h1></div>
           </div>
           <div style="padding-top: 5%">
-            <a href="#demo" class="btn btn-default btn-lg">Watch the Demo</a>
-            <a href="#action" class="btn btn-default btn-lg">Buy now</a>
+            <a id="button1" class="btn btn-default btn-lg" style="color: #70747a">Watch the Demo</a>
+            <a id="button2" class="btn btn-default btn-lg" style="color: #70747a">Buy now</a>
           </div>
         </div>
       </div>
@@ -56,74 +57,129 @@
       <!-- second section - Video -->
       <div id="demo" class="pad-section">
         <div class="container">
-          <div class="row">
-            <div class="col-sm-6 video embed-responsive embed-responsive-16by9 v-align">
-              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/dQw4w9WgXcQ?rel=0" allowfullscreen></iframe>
+          <h1 class="text-center">Demo</h1> <hr />
+          <h4 class="text-center">A convenient tech-forward solution to an uncomfortable and stubborn problem.</h4>
+
+
+            <!-- <div class="col-sm-12 video embed-responsive embed-responsive-16by9 v-align"> -->
+            <div class="col-sm-10" style="padding-left:17%; padding-top:5%">
+              <div class="video-wrapper">
+                  <!-- Copy & Pasted from YouTube -->
+                  <iframe  src="https://www.youtube.com/embed/dQw4w9WgXcQ?rel=0" height="315" width="560" allowfullscreen="" frameborder="0"></iframe>
+              </div>
             </div>
-            <div class="col-sm-6 text-center v-align" style="padding-top: 20%;padding-left:5%">
-              <h2>See the Blinders&trade; in Action.</h2>
-              <h3>A tech-forward solution to an uncomfortable and stubborn problem.</h3>
-            </div>
-          </div>
         </div>
+
       </div>
 
       <!-- /second section -->
 
-      <!-- third section - action -->
+      <!-- third section - features -->
       <div id="features" class="pad-section">
         <div class="container">
-          <h2 class="text-center">Disruptive Features</h2> <hr />
+          <div>
+            <h1 class="text-center">Undisruptive Features</h1> <hr />
+            <h4 class="text-center subtext">Adaptive, cutting edge technology to provide you with the utmost detachment.</h4>
+          </div>
           <div class="row text-center">
             <div class="col-sm-3 col-xs-6">
-              <i class="glyphicon glyphicon-phone-alt"> </i>
-              <h4>Discomfort #Filter&trade;</h4>
+              <i class="glyphicon fa fa-low-vision"> </i>
+              <h3>Real World #filter&trade;</h3>
               <p>Take the #filter out of Instagram and into your real life. Use the Discomfort #Filter&trade; to
-              remove all Uncomfortable Eye Clutter. Homeless people, excrement, trash, now rainbows and sunshine</p>
+              remove all Uncomfortable Eye Clutter. Homeless people, excrement, trash, now all rainbows and sunshine.</p>
             </div>
             <div class="col-sm-3 col-xs-6">
               <i class="glyphicon glyphicon-headphones"> </i>
-              <h4>Sonic Redirection&trade;</h4>
+              <h3>Sonic Redirection&trade;</h3>
               <p>Whether it's your favorite, new hip hop album or simply gentle affirmations, our patented Sonic
                 Redirection&trade; syncs with your favorite playist to drown out the unpleasantries.</p>
             </div>
             <div class="col-sm-3 col-xs-6">
-              <i class="glyphicon glyphicon-bullhorn"> </i>
-              <h4>Face Shield&trade; Technology</h4>
+              <i class="glyphicon fa fa-user-secret"> </i>
+              <h3>Face Shield&trade;</h3>
               <p>No more worrying about people posting embarrassing videos of you on the internet doing
               unconscionable things to the differently forturnate. With Face Shield&trade;, you don't have
             worry about being shamed for simply trying to remove the burdens to your peaceful commute. </p>
+            </div>
+            <div class="col-sm-3 col-xs-6">
+              <i class="glyphicon fa fa-universal-access"> </i>
+              <h3>Nose Guard 3000&trade;</h3>
+              <p>Nothing makes you long for your Midwestern home more than the unfortunate smell of urine.
+              Thanks to the Nose Guard 3000&trade;, you'll have the sweet scent of lavender to help you forget allowfullscreen
+              about that lack of bathroom access.</p>
             </div>
           </div>
         </div>
       </div>
       <!-- /third section -->
 
-      <!-- fourth section - Information -->
+      <!-- fourth section - testimonials -->
       <div id="testimonials" class="pad-section">
         <div class="container">
-          <div class="row">
-            <div class="col-sm-6">
-              <div class="panel panel-default">
+          <div class='row'>
+            <h1 class="text-center">Testimonials</h1> <hr />
+            <h4 class="text-center subtext">Real life quotes from actual people.</h4>
+            <div class='col-md-offset-2 col-md-8'>
+              <div class="carousel slide" data-ride="carousel" id="quote-carousel">
+                <!-- Bottom Carousel Indicators
+                <ol class="carousel-indicators">
+                  <li data-target="#quote-carousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#quote-carousel" data-slide-to="1"></li>
+                  <li data-target="#quote-carousel" data-slide-to="2"></li>
+                </ol>
+ -->
+                <!-- Carousel Slides / Quotes -->
+                <div class="carousel-inner">
 
-                <div class="panel-body lead">
-                  <i>"The wealthy working people have earned their right to live in the city. They went out, got an education, work hard, and earned it.
-                  I shouldn’t have to worry about being accosted. I shouldn’t have to see the pain, struggle, and despair of homeless people to and
-                  from my way to work every day."</i>
+                  <!-- Quote 1 -->
+                  <div class="item active">
+                    <blockquote>
+                      <div class="row">
+                        <div class="col-sm-12 ">
+                          <p class="quote" style="padding-left:1em;padding-right:1em"><i>The wealthy working people
+                            have earned their right to live in the city. They went out, got an education, work hard,
+                            and earned it. I shouldn’t have to worry about being accosted. I shouldn’t have to see
+                            the pain, struggle, and despair of homeless people to and from my way to work every day.</i></p>
+                          <h4 class="text-right">--Justin Keller</h4>
+                        </div>
+                      </div>
+                    </blockquote>
+                  </div>
+                  <!-- Quote 2  -->
+
+                <div class="item">
+                  <blockquote>
+                    <div class="row">
+                      <div class="col-sm-12 ">
+                        <p class="quote" style="padding-left:1em;padding-right:1em"><i>You can preach compassion,
+                          equality, and be the biggest lover in the world, but there is an area of town for
+                          degenerates and an area of town for the working class. There is nothing positive gained
+                          from having them so close to us.</i></p>
+                        <h4 class="text-right">--Greg Gopman</h4>
+                      </div>
+                    </div>
+                  </blockquote>
                 </div>
-                <div class="panel-heading">
-                  <h2 class="panel-title">Justin Keller</h2>
+                  <!-- Quote 3
+                -->
+                  <div class="item">
+                    <blockquote>
+                      <div class="row">
+                        <div class="col-sm-12 ">
+                          <p class="quote" style="padding-left:1em;padding-right:1em"><i>San Francisco has some of the
+                            craziest homeless people I have ever seen in my life. Stop giving them money, you know they
+                            just buy alcohol and drugs with it right? Next time just hand them a handle of vodka and a
+                            pack of cigarettes, it’ll save everyone some trouble.</i></p>
+                          <h4 class="text-right">--Peter Shih</h4>
+                        </div>
+                      </div>
+                    </blockquote>
+                  </div>
                 </div>
-              </div>
-            </div>
-            <div class="col-sm-6">
-              <div class="panel panel-default">
-                <div class="panel-heading">
-                  <h2 class="panel-title">Additional information</h2>
-                </div>
-                <div class="panel-body lead">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed hendrerit adipiscing blandit. Aliquam placerat, velit a fermentum fermentum, mi felis vehicula justo, a dapibus quam augue non massa. Duis euismod, augue et tempus consequat, lorem mauris porttitor quam, consequat ultricies mauris mi a metus. Phasellus congue, leo sed ultricies tristique, nunc libero tempor ligula, at varius mi nibh in nisi. Aliquam erat volutpat. Maecenas rhoncus, neque facilisis rhoncus tempus, elit ligula varius dui, quis amet.
-                </div>
+
+                <!-- Carousel Buttons Next/Prev -->
+                <a data-slide="prev" href="#quote-carousel" class="left carousel-control"><i class="fa fa-chevron-left"></i></a>
+                <a data-slide="next" href="#quote-carousel" class="right carousel-control"><i class="fa fa-chevron-right"></i></a>
               </div>
             </div>
           </div>
@@ -134,24 +190,28 @@
       <!-- fifth section -->
       <div id="action" class="pad-section">
         <div class="container">
-          <div class="row">
-            <div class="col-sm-12 text-center">
-              <h3>No. No. You can't buy these. But you can do something.</h3>
-              <h4>Here are some tangible steps to becoming a part of the solution instead of a part of the problem.</h4>
-            </div>
-          </div>
+          <h1 class="text-center">No. No. No. </h1> <hr />
+          <h4 class="text-center subtext">You can't buy these. But you can do something and be a part of the solution.</h4>
 
-        <div class="row">
-          <div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">Get human. Practice treating the unhoused with dignity. Check out this guide.</li>
-              <li class="list-group-item">Get educated. Know and understand what's going on in regards to the homelessness crisis.</li>
-              <li class="list-group-item">Get involved. Check out these organizations to support with time and money.</li>
-              <li class="list-group-item">Get organized. Rally your own community to make positive impact</li>
-              <li class="list-group-item">Get loud. Speak to the levers of change. Call politicians. Nag your company to do more. Call out your friends.</li>
+          <div class="row">
+            <div class="col-sm-3">
+              <ul id="action-steps" class="list-group list-group-flush">
+                <li id="stepOne" onclick="clickHide()" class="list-group-item active-li">Get human.</li>
+                <li id="stepTwo" onclick="clickHide()" class="list-group-item">Get educated. </li>
+                <li id="stepThree" onclick="clickHide()" class="list-group-item">Get involved. </li>
+                <li id="stepFour" onclick="clickHide()" class="list-group-item">Get organized. </li>
+                <li id="stepFive" onclick="clickHide()" class="list-group-item">Get loud. </li>
+            </div>
+            <div class="col-sm-8"style="padding-left: 15%">
+              <div id="stepLongOne" class="display-long"><h2>Practice treating the unhoused with dignity. Check out this guide.</h2></div>
+              <div id="stepLongTwo" class="display-hide"><h2>Know and understand what's going on in regards to the homelessness crisis.</h2></div>
+              <div id="stepLongThree" class="display-hide"><h2>Check out these organizations to support with time and money.</h2></div>
+              <div id="stepLongFour" class="display-hide"><h2>Rally your own community to make positive impact</h2></div>
+              <div id="stepLongFive" class="display-hide"><h2>Speak to the levers of change. Call politicians. Nag your company to do more. Call out your friends.</h2></div>
           </div>
         </div>
       </div>
+    </div>
       <!-- /fifth section -->
 
       <!-- footer -->
@@ -169,5 +229,6 @@
         <!-- JS -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="index.js"></script>
     </body>
     </html>

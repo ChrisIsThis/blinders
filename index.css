@@ -29,16 +29,43 @@ body {
   color: white
 }
 
-.video iframe {
-  max-height: 80%;
-  padding-top: 20%;
+.video-wrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 30px;
+	height: 0;
+  overflow: hidden;
+}
+.video-wrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 }
 
 .title-tag {
   background-color: #306d9f;
-  opacity: 0.6
+  opacity: 0.7;
+  padding-bottom: 1%;
 }
 /* additional sections */
+.active-li {
+  background-color: #306d9f !important;
+  color: #ffffff;
+}
+.display-long {
+  display: block;
+}
+.display-hide {
+  display: none;
+}
+.subtext {
+  padding-bottom: 5%
+}
+#action-steps {
+  font-size: 2em;
+}
 #home {
   background: url(https://assets.pcmag.com/media/images/199406-10-lumus-loe-based-glasses.jpg) no-repeat center center fixed;
   display: table;
@@ -52,10 +79,10 @@ body {
 }
 
 #demo {
-  background-color: #83878e;
+  background-color: #70747a;
   color: #ffffff;
 }
-#features {
+#features, #action {
   background-color: #ffffff;
   color: #83878e;
 }
@@ -72,13 +99,10 @@ body {
 }
 #testimonials {
   background-color: #306d9f;
-  color: #83878e;
+  color: #ffffff;
 }
 #testimonials .panel {
   opacity: 0.85;
-}
-#google_map {
-  height: 500px;
 }
 footer {
   padding: 20px 0;
@@ -89,4 +113,134 @@ footer .glyphicon {
 }
 footer .glyphicon:hover {
   color: #306d9f;
+}
+
+/*carousel*/
+.quote {
+  font-size: 1.5em;
+}
+#quote-carousel
+{
+  padding: 0 10px 30px 10px;
+  margin-top: 30px;
+}
+
+/* Control buttons  */
+#quote-carousel .carousel-control
+{
+  background: none;
+  color: #222;
+  font-size: 2.3em;
+  text-shadow: none;
+  margin-top: 30px;
+}
+/* Previous button  */
+#quote-carousel .carousel-control.left
+{
+  left: -12px;
+}
+/* Next button  */
+#quote-carousel .carousel-control.right
+{
+  right: -12px !important;
+}
+/* Changes the position of the indicators */
+#quote-carousel .carousel-indicators
+{
+  right: 50%;
+  top: auto;
+  bottom: 0px;
+  margin-right: -19px;
+}
+/* Changes the color of the indicators */
+#quote-carousel .carousel-indicators li
+{
+  background: #c0c0c0;
+}
+#quote-carousel .carousel-indicators .active
+{
+  background: #333333;
+}
+#quote-carousel img
+{
+  width: 250px;
+  height: 100px
+}
+/* End carousel */
+
+.item blockquote {
+    border-left: none;
+    margin: 0;
+}
+
+.item blockquote img {
+    margin-bottom: 10px;
+}
+
+.item blockquote p:before {
+    content: "\f10d";
+    font-family: 'Fontawesome';
+    float: left;
+    margin-right: 10px;
+}
+
+/* >>>>>>>> Typewriter <<<<<<<<<<*/
+
+.typewriter h1 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid black; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+
+  animation:
+    typing 5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: black; }
+}
+
+
+/**
+  MEDIA QUERIES
+*/
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    #quote-carousel
+    {
+      margin-bottom: 0;
+      padding: 0 40px 30px 40px;
+    }
+
+}
+
+/* Small devices (tablets, up to 768px) */
+@media (max-width: 768px) {
+
+    /* Make the indicators larger for easier clicking with fingers/thumb on mobile */
+
+    #quote-carousel .carousel-indicators {
+        bottom: -20px !important;
+    }
+    #quote-carousel .carousel-indicators li {
+        display: inline-block;
+        margin: 0px 5px;
+        width: 15px;
+        height: 15px;
+    }
+    #quote-carousel .carousel-indicators li.active {
+        margin: 0px 5px;
+        width: 20px;
+        height: 20px;
+    }
 }
