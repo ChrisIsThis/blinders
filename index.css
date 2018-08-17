@@ -10,7 +10,10 @@ body {
 /* padded section */
 .pad-section {
   padding: 50px 0;
-  height: 100%
+  /*
+  For some reason, setting this to 100% 
+  causes the sections to overflow on small screens
+  height: 100%*/
 }
 .pad-section img {
   width: 100%;
