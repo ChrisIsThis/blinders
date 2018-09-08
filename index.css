@@ -309,9 +309,10 @@ footer .glyphicon:hover {
   #features h3 {
     font-size: 1.4em
   }
-  .feature-detail {
+  /* Note: Do we want to hide this from small phones? */
+  /*.feature-detail {
     display: none
-  }
+  }*/
   .quote {
     font-size: .9em;
   }
@@ -331,4 +332,52 @@ footer .glyphicon:hover {
     text-align: center !important
   }
 
+}
+
+.come-in-down {
+  transform: translateY(400px);
+  animation: come-in-down 1.5s ease forwards;
+}
+.come-in-down:nth-child(odd) {
+  animation-duration: 1s; /* So they look staggered */
+}
+
+.come-in-right {
+  transform: translateX(400px);
+  animation: come-in-right 1.5s ease forwards;
+}
+.come-in-right:nth-child(odd) {
+  animation-duration: 1s; /* So they look staggered */
+}
+
+@keyframes come-in-right {
+  to { transform: translateY(0); }
+}
+
+@keyframes come-in-down {
+  to { transform: translateX(0); }
+}
+
+.come-in-up {
+  transform: translateY(-400px);
+  animation: come-in-up 1.5s ease forwards;
+}
+.come-in-up:nth-child(odd) {
+  animation-duration: 1s; /* So they look staggered */
+}
+
+.come-in-left {
+  transform: translateX(-400px);
+  animation: come-in-left 1.5s ease forwards;
+}
+.come-in-left:nth-child(odd) {
+  animation-duration: 1s; /* So they look staggered */
+}
+
+@keyframes come-in-up {
+  to { transform: translateY(0); }
+}
+
+@keyframes come-in-left {
+  to { transform: translateX(0); }
 }
