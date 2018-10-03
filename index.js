@@ -32,7 +32,7 @@ $(document).ready(function() {
    */
 
   $.fn.visible = function(partial) {
-    
+
       var $t            = $(this),
           $w            = $(window),
           viewTop       = $w.scrollTop(),
@@ -41,7 +41,7 @@ $(document).ready(function() {
           _bottom       = _top + $t.height(),
           compareTop    = partial === true ? _bottom : _top,
           compareBottom = partial === true ? _top : _bottom;
-    
+
     return ((compareBottom <= viewBottom) && (compareTop >= viewTop));
 
   };
@@ -51,7 +51,7 @@ $(document).ready(function() {
   Array.prototype.randomElement = function () {
     return this[Math.floor(Math.random() * this.length)]
   }
-    
+
 })(jQuery);
 
 function animateVisible() {
@@ -66,7 +66,7 @@ function animateVisible() {
     ["come-in-left", "come-in-up"]
   ];
   [
-    '.container', 
+    '.container',
     '.col-sm-3',
     '.btn',
     '.text-center',
@@ -89,8 +89,8 @@ $(window).scroll(function(event) {
 });
 
 function clickHide() {
-  var stepArr = ["#stepOne","#stepTwo","#stepThree","#stepFour","#stepFive"];
-  var stepLongArr = ["#stepLongOne","#stepLongTwo","#stepLongThree","#stepLongFour","#stepLongFive"];
+  var stepArr = ["#stepOne","#stepTwo","#stepThree","#stepFour"];
+  var stepLongArr = ["#stepLongOne","#stepLongTwo","#stepLongThree","#stepLongFour"];
 
   var x = "#" + event.target.id;
   var i;
@@ -109,3 +109,9 @@ function clickHide() {
     }
   }
 }
+$(function() {
+   $('.scroll-down').click (function() {
+     $('html, body').animate({scrollTop: $('#demo').offset().top }, 'slow');
+     return false;
+   });
+ });
