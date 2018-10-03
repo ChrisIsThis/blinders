@@ -11,7 +11,7 @@ body {
 .pad-section {
   padding: 50px 0;
   /*
-  For some reason, setting this to 100% 
+  For some reason, setting this to 100%
   causes the sections to overflow on small screens
   height: 100%*/
 }
@@ -21,8 +21,7 @@ body {
 /* vertical-centered text */
 .text-vcenter {
   display: table-cell;
-  text-align: center;
-  vertical-align: middle;
+  text-align: left;
 }
 .text-vcenter h1 {
   font-size: 4.5em;
@@ -32,9 +31,22 @@ body {
   color: white
 }
 
+.title-img {
+  margin-left: 17%;
+  padding-top: 15%;
+
+  vertical-align: middle
+
+}
+.title-img img {
+  width: 120%;
+  height: 100%;
+}
+.title-img-mob {
+  display: none;
+}
 .title-tag {
-  background-color: #306d9f;
-  opacity: 0.7;
+
   padding-bottom: 1%;
 }
 
@@ -60,7 +72,7 @@ body {
 
 /* additional sections */
 .active-li {
-  background-color: #306d9f !important;
+  background-color: #017fcb !important;
   color: #ffffff;
 }
 .display-long {
@@ -75,8 +87,11 @@ body {
 #action-steps {
   font-size: 2em;
 }
+#action-steps:hover {
+  cursor:pointer
+}
 #home {
-  background: url(https://assets.pcmag.com/media/images/199406-10-lumus-loe-based-glasses.jpg) no-repeat center center fixed;
+  background: url(https://i.imgur.com/BdYQ7XY.jpg) no-repeat center center fixed;
   display: table;
   height: 100%;
   position: relative;
@@ -88,7 +103,7 @@ body {
 }
 
 #demo {
-  background-color: #70747a;
+  background-color: #017fcb;
   color: #ffffff;
 }
 #features, #action {
@@ -107,7 +122,7 @@ body {
   width: 140px;
 }
 #testimonials {
-  background-color: #306d9f;
+  background-color: #017fcb;
   color: #ffffff;
 }
 #testimonials .panel {
@@ -197,8 +212,10 @@ footer .glyphicon:hover {
 }
 
 /* >>>>>>>> Typewriter <<<<<<<<<<*/
-
-.typewriter h1 {
+.typewriter {
+  color: #017fcb;
+}
+.typewriter h2 {
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: .15em solid black; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
@@ -221,6 +238,77 @@ footer .glyphicon:hover {
   50% { border-color: black; }
 }
 
+/* Scroll down button */
+*,
+:after,
+:before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+.scroll-down {
+  opacity: 1;
+  -webkit-transition: all .5s ease-in 3s;
+  transition: all .5s ease-in 3s;
+}
+
+.scroll-down {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  margin-left: -16px;
+  display: block;
+  width: 32px;
+  height: 32px;
+  border: 2px solid #FFF;
+  background-size: 14px auto;
+  border-radius: 50%;
+  z-index: 2;
+  -webkit-animation: bounce 2s infinite 2s;
+  animation: bounce 2s infinite 2s;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+  transform: scale(1)
+}
+
+.scroll-down:before {
+    position: absolute;
+    top: calc(50% - 8px);
+    left: calc(50% - 6px);
+    transform: rotate(-45deg);
+    display: block;
+    width: 12px;
+    height: 12px;
+    content: "";
+    border: 2px solid white;
+    border-width: 0px 0 2px 2px;
+}
+
+@keyframes bounce {
+  0%,
+  100%,
+  20%,
+  50%,
+  80% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+  60% {
+    -webkit-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+}
 
 /**
   MEDIA QUERIES
@@ -239,6 +327,17 @@ footer .glyphicon:hover {
 /* Small devices (tablets, up to 768px) */
 @media (max-width: 768px) {
 
+  .title-img {
+    display: none;
+
+  }
+  .title-img-mob {
+    margin-left: 30%;
+    margin-top: 40%;
+
+    display: block;
+
+  }
     /* Make the indicators larger for easier clicking with fingers/thumb on mobile */
 
     #quote-carousel .carousel-indicators {
